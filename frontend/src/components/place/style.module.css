@@ -1,0 +1,83 @@
+.containerPlace {
+  display: flex;
+}
+
+.placeStart {
+  width: 200px;
+  height: 100vh;
+  /* position: fixed; */
+  /* top: 0; */
+  /* bottom: 0; */
+  background: white;
+  color: #222;
+  transition: all .2s ease;
+  overflow: auto;
+  direction: rtl;
+  text-align: center;
+  background: #5d5c61;
+}
+
+.placeStart::-webkit-scrollbar {
+  width: 6px;
+  margin-left: 3px;               /* ширина scrollbar */
+}
+.placeStart::-webkit-scrollbar-track {
+  background: #fff;        /* цвет дорожки */
+  border-radius: 12px;
+}
+.placeStart::-webkit-scrollbar-thumb {
+  background-color: #7395ae;    /* цвет плашки */
+  border-radius: 20px;       /* закругления плашки */
+}
+
+.placeEnd {
+  width: 200px;
+  height: 100vh;
+  max-height: 100vh;
+  /* position: fixed; */
+  /* top: 0; */
+  /* bottom: 0; */
+  color: #222;
+  transition: all .2s ease;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #5d5c61;
+  padding: 0 10px;
+
+  overflow: hidden;
+}
+
+.placeLeft {
+  left: 0;
+}
+
+.placeRight {
+  right: 0;
+}
+
+.close {
+  margin-top: 20px;
+  height: fit-content;
+  background: black;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  user-select: none;
+}
+
+.close-no-active {
+  transform: translateX(-200px);
+}
+/* 
+.closeRight {
+  position: absolute;
+  right: 200px;
+  top: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+} */
